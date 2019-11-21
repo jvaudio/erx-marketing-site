@@ -1,0 +1,51 @@
+
+<section class="latest-news section--padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>Latest
+                        <span class="highlighted">News</span>
+                    </h1>
+                    <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
+                        est laborum dolo rumes fugats untras.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for post in site.posts | limit: "3" %}
+            <div class="col-lg-4 col-md-6">
+                <div class="news">
+                    {% if post.post_image %}
+                    <div class="news__thumbnail">
+                        <a href="{{post.url}}"><img src="{{post.post_image}}" class="img-fluid" alt="{{post.title}}"/></a>
+                    </div>
+                    {% endif %}
+                    <div class="news__content">
+                        <a href="{{post.url}}" class="news-title">
+                            <h4>{{post.title}}</h4>
+                        </a>
+                        <p>{{post.excerpt | strip_html}}</p>
+                    </div>
+                    <div class="news__meta">
+                        <div class="date">
+                            <span class="lnr lnr-clock"></span>
+                            <p>{{post.date | date_to_long_string }}</p>
+                        </div>
+
+                        <div class="other">
+                            <ul>
+                                <li>
+                                    <span class="lnr lnr-bubble"></span>
+                                    <a href="{{post.url}}#disqus_thread" data-disqus-identifier="{{post.id}}">0 Comments</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         {% endfor %}
+        </div>
+    </div>
+</section>

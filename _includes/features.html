@@ -1,0 +1,25 @@
+
+<section class="features section--padding">
+    <div class="container">
+        <div class="row">
+          {% for feature in site.data.features %}
+            {% assign feature_data = feature.feature_info %}
+            <div class="col-lg-4 col-md-6">
+                <div class="feature">
+                    {% if feature_data.image %}
+                    <div class="feature__img">
+                        <img src="{{feature_data.image}}" alt="{{feature_data.title}}">
+                    </div>
+                    {% endif %}
+                    <div class="feature__title">
+                        <h3>{{feature_data.title}}</h3>
+                    </div>
+                    <div class="feature__desc">
+                        <p>{{feature_data.text}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

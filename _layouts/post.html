@@ -1,0 +1,76 @@
+---
+layout: default
+title: "Blog Details"
+---
+
+{% include post_breadcrumb.html %}
+
+<section class="blog_area section--padding2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="single_blog blog--default">
+                    <article>
+                    	{% if page.post_image %}
+                        <figure>
+                            <img src="{{page.post_image}}" class="img-fluid" alt="{{post.title}}">
+                        </figure>
+                        {% endif %}
+                        <div class="blog__content">
+                            <a href="{{page.url}}" class="blog__title">
+                                <h4>{{page.title}}</h4>
+                            </a>
+                            <div class="blog__meta">
+                              {% if page.author %}
+                                <div class="author">
+                                    <span class="lnr lnr-user"></span>
+                                    <p>By {{page.author}}</p>
+                               </div>
+                               {% endif %}
+                                <div class="date_time">
+                                    <span class="lnr lnr-clock"></span>
+                                    <p>{{page.date | date_to_long_string }}</p>
+                                </div>
+                                <li>
+                            </li>
+                            </div>
+                        </div>
+
+                        <div class="single_blog_content">
+                            {{page.content}}
+                            <div class="share_tags">
+                                {% include social_share.html %}
+                                <div class="tags">
+                                	{{ page | tags | replace: ","," " }}
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="comment_area comment--form">
+                    <div class="commnet_form_wrapper">
+                      <div id="disqus_thread"></div>
+						<script>
+						var disqus_config = function () {
+						this.page.url = '{{site.url}}{{page.url}}';  
+						this.page.identifier = '{{page.url}}'; 
+						};
+						
+						(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://jerryvoelker.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+              {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+</section>

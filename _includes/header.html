@@ -1,0 +1,83 @@
+<div class="menu-area">
+    <div class="top-menu-area py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-6 v_middle">
+                    <div class="logo">
+                        <a href="{{site.url}}">
+                            <img src="{{site.logo_url}}" alt="{{site.title}}" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-1 col-md-9 col-6 v_middle">
+                    <div class="author-area">
+                      {% include social_profiles.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainmenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <div class="mainmenu__search">
+                            <form>
+                                <div class="searc-wrap">
+                                    <input type="text" id="search-input" placeholder="Search blog posts..">
+                                    <button type="submit" class="search-wrap__btn">
+                                        <span class="lnr lnr-magnifier"></span>
+                                    </button>
+                                </div>
+                            </form>
+                            <ul id="results-container"></ul>
+                        </div>
+                    </div>
+
+                    <nav class="navbar navbar-expand-md navbar-light mainmenu__menu">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a {% if page.url == "/" %} class="current" {% endif %} href="{{site.url}}">HOME</a>
+                                </li>
+                                <li>
+                                    <a {% if page.url == "/about" %} class="current" {% endif %} href="{{site.url}}/about">ABOUT </a>
+                                </li> 
+                                <li class="has_dropdown">
+                                    <a {% if page.url == "/blog/" %} class="current" {% endif %} href="{{site.url}}/blog">Blog</a>
+                                    <div class="dropdowns dropdown--menu">
+                                    <ul class="card-content">
+                                        {% assign categories_list = site.categories %}
+                                          {% if categories_list.first[0] == null %}
+                                            {% for category in categories_list %}
+                                              <li><a href="/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | capitalize }}</a></li>
+                                            {% endfor %}
+                                          {% else %}
+                                            {% for category in categories_list %}
+                                              <li><a href="/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | capitalize }}</a></li>
+                                            {% endfor %}
+                                          {% endif %}
+                                        {% assign categories_list = nil %}
+                                    </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a {% if page.url == "/faq" %} class="current" {% endif %} href="{{site.url}}/faq">FAQ</a>
+                                </li>
+                                <li>
+                                    <a {% if page.url == "/contact" %} class="current" {% endif %} href="{{site.url}}/contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

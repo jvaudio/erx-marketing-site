@@ -1,0 +1,58 @@
+{% for post in paginator.posts %}
+<div class="single_blog blog--default">
+    <figure>
+        {% if post.post_image %}
+         <a href="{{post.url}}"><img src="{{post.post_image}}" class="img-fluid" alt="{{post.title}}"/></a>
+        {% endif %}
+        <figcaption>
+            <div class="blog__content">
+                <a href="{{post.url}}" class="blog__title">
+                    <h4>{{post.title}}</h4>
+                </a>
+
+                <div class="blog__meta">
+                    {% if post.author %}
+                    <div class="author">
+                        <span class="lnr lnr-user"></span>
+                        <p>By <span>{{post.author}}</span></p>
+                    </div>
+                    {% endif %}
+                    <div class="date_time">
+                        <span class="lnr lnr-clock"></span>
+                        <p>{{post.date | date_to_long_string }}</p>
+                    </div>
+                    <div class="comment_view">
+                        <p class="comment">
+                            <span class="lnr lnr-bubble"></span> <a href="{{post.url}}#disqus_thread" data-disqus-identifier="{{post.id}}">0 Comments</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_text">
+                <p>{{post.content | strip_html | truncatewords: "47" }}</p>
+                <a href="{{post.url}}" class="btn btn--md btn--round">Read More</a>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination-area">
+<nav class="navigation pagination" role="navigation">
+    <div class="nav-links">
+        {% if paginator.previous_page %}
+         <a class="page-numbers current" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+            <span class="lnr lnr-arrow-left"></span>
+          </a>
+         {% endif %}
+         {% if paginator.next_page %}
+          <a class="page-numbers" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+            <span class="lnr lnr-arrow-right"></span>
+          </a>
+        {% endif %}
+    </div>
+</nav>
+</div>
+{% endif %}
+
+

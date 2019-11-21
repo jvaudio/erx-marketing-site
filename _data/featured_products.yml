@@ -1,0 +1,40 @@
+- product_info:
+    title: "Product Title One Lorem ipsum dolor sit."
+    category: "WordPress"
+    product_image: "/assets/images/featured_pro_01.jpg"
+    category_url: "#"
+    buy_button_text: "Buy Now"
+    buy_button_url: "#"
+    price: "$ 120"
+    description: "Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque."
+
+- product_info:
+    title: "Product Title Two Lorem ipsum dolor sit."
+    category: "WordPress"
+    product_image: "/assets/images/featured_pro_02.jpg"
+    category_url: "#"
+    buy_button_text: "Buy Now"
+    buy_button_url: "#"
+    price: "$ 420"
+    description: "Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque."
+    
+- product_info:
+    title: "Product Title Three Lorem ipsum dolor sit."
+    category: "WordPress"
+    product_image: "/assets/images/featured_pro_03.jpg"
+    product_url: "#"
+    category_url: "#"
+    buy_button_text: "Buy Now"
+    buy_button_url: "#"
+    price: "$ 352"
+    description: "Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque."
+    
+- product_info:
+    title: "Product Title Four Lorem ipsum dolor sit."
+    category: "WordPress"
+    product_image: "/assets/images/featured_pro_04.jpg"
+    category_url: "#"
+    buy_button_text: "Buy Now"
+    buy_button_url: "#"
+    price: "$ 250"
+    description: "Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque."

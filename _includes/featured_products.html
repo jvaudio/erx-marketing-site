@@ -1,0 +1,88 @@
+
+<section class="featured-products bgcolor  section--padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-title-area ">
+                    <div class="product__title">
+                        <h2>Weekly Featured Products</h2>
+                    </div>
+
+                    <div class="product__slider-nav rounded">
+                        <span class="lnr lnr-chevron-left nav_left"></span>
+                        <span class="lnr lnr-chevron-right nav_right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 no0-padding">
+                <div class="featured-product-slider prod-slider1">
+                  {% for product_data in site.data.featured_products %}
+                   {% assign product = product_data.product_info %}
+                    <div class="featured__single-slider">
+                        <div class="featured__preview-img">
+                            <img src="{{product.product_image}}" alt="{{product.title}}" class="img-fluid"/>
+                            <div class="prod_btn">
+                             <a href="{{product.buy_button_url}}" target="__blank"  class="transparent btn--sm btn--round">More Info</a>
+                             <a href="{{product.buy_button_url}}" target="__blank" class="transparent btn--sm btn--round">Buy Now</a>
+                            </div>
+                        </div>
+
+                        <div class="featured__product-description">
+                            <div class="product-desc desc--featured">
+                                <a href="{{product.product_url}}" target="__blank" class="product_title">
+                                    <h4>{{product.title}}</h4>
+                                </a>
+                                <ul class="titlebtm">
+                                    <li class="product_cat">
+                                        <a href="{{product.category_url}}" target="__blank"><span class="lnr lnr-book"></span>{{product.category}}</a>
+                                    </li>
+                                </ul>
+                                <p>{{product.description}}</p>
+                            </div>
+
+                            <div class="product_data">
+                                <div class="tags tags--round">
+                                    <ul>
+                                        <li>
+                                            <a href="{{product.buy_button_url}}" target="__blank">Buy Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-purchase featured--product-purchase">
+                                    <div class="price_love">
+                                        <span>{{product.price}}</span>
+                                    </div>
+                                    <div class="rating product--rating">
+                                        <ul>
+                                            <li>
+                                                <span class="fa fa-star"></span>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-star"></span>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-star"></span>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-star"></span>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-star"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

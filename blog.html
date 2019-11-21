@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Blog"
+pagination:
+  enabled: true
+---
+
+{% include breadcrumb.html %}
+<section class="blog_area section--padding2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+             {% include blog_area.html %}
+            </div>
+            <div class="col-lg-4">
+              {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+</section>
