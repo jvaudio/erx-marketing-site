@@ -1,13 +1,11 @@
 
 title: >- #
  Martplace - Blog version Two
-email: "your-email@example.com"
+email: "info@companymail.com"
 description: >- # this means to ignore newlines until "baseurl:"
  MartPlace - Complete Online Multipurpose Marketplace HTML Template
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jerryvoelker.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 mailchimp_url: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=4784863884"
 keywords: "app, app landing, product landing, digital, material, html5"
 logo_url: "/assets/images/logo.png"
@@ -24,7 +22,7 @@ twitter_url: "https://twitter.com/jerry"
 youtube_url: "https://youtube.com/jerry"
 pinterest_url: "https://pinterest.com/jerry"
 linkedin_url: "https://linkedin.com/jerry"
-dribbble_url: "https://dribbble.com//jerry"
+dribbble_url: "https://dribbble.com/change_another"
 
 # Build settings
 markdown: kramdown

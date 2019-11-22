@@ -1,0 +1,76 @@
+- section_info:
+    section_title: 'The Team at<span class="highlighted">MartPlace</span>'
+    section_description: >- #
+      Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+
+- member_info:
+    name: "Douglus Khundu"
+    designation: "Software Engineer"
+    image: "/assets/images/team1.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "James Marter"
+    designation: "nodeJS Expert"
+    image: "/assets/images/team2.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "Mart Joiell"
+    designation: "Artist"
+    image: "/assets/images/team3.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "Jeweel Shah"
+    designation: "Blogger"
+    image: "/assets/images/team4.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "Robert Jellybean"
+    designation: "Application Developer"
+    image: "/assets/images/team2.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "Tomat Notfrut"
+    designation: "Javascript Expert"
+    image: "/assets/images/team3.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "Naro Sundor"
+    designation: "CTO"
+    image: "/assets/images/team4.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"
+
+- member_info:
+    name: "Douglus Khundu"
+    designation: "Web Designer"
+    image: "/assets/images/team1.jpg"
+    facebook_url: "#"
+    twitter_url: "#"
+    youtube_url: "#"
+    dribbble_url: "#"

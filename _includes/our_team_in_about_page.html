@@ -1,0 +1,68 @@
+
+<section class="team_area section--padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+             {% for members_info in site.data.team_members | limit: "1" %}
+              {% assign member = members_info.section_info %}
+                <div class="section-title">
+                    <h1>{{ member.section_title }}</h1>
+                    <p>{{ member.section_description }}</p>
+                </div>
+              {% endfor %}
+            </div>
+        </div>
+
+        <div class="row">
+         {% for members_info in site.data.team_members | offset: "1" %}
+          {% assign member = members_info.member_info %}
+            <div class="col-lg-3 col-md-4">
+                <div class="single_team_member">
+                    <figure>
+                        <img src="{{member.image}}" alt="{{member.name}}">
+                        <figcaption>
+                            <div class="name_desig">
+                                <h4>{{ member.name }}</h4>
+                                <p>{{ member.designation }}</p>
+                            </div>
+
+                            <div class="social">
+                                <ul>
+                                    {% if member.facebook_url %}
+                                    <li>
+                                        <a href="{{member.facebook_url}}" target="__blank">
+                                            <span class="fa fa-facebook"></span>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if member.twitter_url %}
+                                    <li>
+                                        <a href="{{member.twitter_url}}" target="__blank">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if member.youtube_url %}
+                                    <li>
+                                        <a href="{{member.youtube_url}}" target="__blank">
+                                            <span class="fa fa-youtube"></span>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if member.dribbble_url %}
+                                    <li>
+                                        <a href="{{member.dribbble_url}}" target="__blank">
+                                            <span class="fa fa-dribbble"></span>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>

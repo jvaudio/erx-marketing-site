@@ -1,128 +1,38 @@
 
 <section class="why_choose section--padding">
-    <!-- start container -->
     <div class="container">
-        <!-- start row -->
         <div class="row">
-            <!-- start col-md-12 -->
             <div class="col-md-12">
+             {% for choose in site.data.why_choose | limit: "1" %}
+               {% assign section_info = choose.page_info %}
                 <div class="section-title">
-                    <h1>Why Choose
-                        <span class="highlighted">MartPlace</span>
-                    </h1>
-                    <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
-                        est laborum dolo rumes fugats untras.</p>
+                    <h1>{{section_info.section_title}}</h1>
+                    <p>{{section_info.section_description}}</p>
                 </div>
+             {% endfor %}
             </div>
-            <!-- end /.col-md-12 -->
         </div>
-        <!-- end /.row -->
-
-        <!-- start row -->
         <div class="row">
-            <!-- start .col-md-4 -->
+            {% for choose_opt in site.data.why_choose | offset: "1" %}
+            {% assign choose = choose_opt.choose %}
             <div class="col-lg-4 col-md-6">
-                <!-- start .reason -->
                 <div class="feature2">
-                    <span class="feature2__count">01</span>
+                    <span class="feature2__count">
+                    {% assign choost_number = forloop.index %}
+                     {% if choost_number < 10 %}
+                     {{ choost_number | prepend: "0" }}
+                     {% else %}
+                     {{ choost_number }}
+                     {% endif %}
+                    </span>
                     <div class="feature2__content">
-                        <span class="lnr lnr-license pcolor"></span>
-                        <h3 class="feature2-title">One Time Payment</h3>
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
+                        {{choose.icon}}
+                        <h3 class="feature2-title">{{choose.title}}</h3>
+                        <p>{{choose.description}}</p>
                     </div>
-                    <!-- end /.feature2__content -->
                 </div>
-                <!-- end /.feature2 -->
             </div>
-            <!-- end /.col-md-4 -->
-
-            <!-- start .col-md-4 -->
-            <div class="col-lg-4 col-md-6">
-                <!-- start .feature2 -->
-                <div class="feature2">
-                    <span class="feature2__count">02</span>
-                    <div class="feature2__content">
-                        <span class="lnr lnr-magic-wand scolor"></span>
-                        <h3 class="feature2-title">Quality Products</h3>
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                    <!-- end /.feature2__content -->
-                </div>
-                <!-- end /.feature2 -->
-            </div>
-            <!-- end /.col-md-4 -->
-
-            <!-- start .col-md-4 -->
-            <div class="col-lg-4 col-md-6">
-                <!-- start .feature2 -->
-                <div class="feature2">
-                    <span class="feature2__count">03</span>
-                    <div class="feature2__content">
-                        <span class="lnr lnr-lock mcolor1"></span>
-                        <h3 class="feature2-title">100% Secure Paymentt</h3>
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                    <!-- end /.feature2__content -->
-                </div>
-                <!-- end /.feature2 -->
-            </div>
-            <!-- end /.col-md-4 -->
-
-            <!-- start .col-md-4 -->
-            <div class="col-lg-4 col-md-6">
-                <!-- start .feature2 -->
-                <div class="feature2">
-                    <span class="feature2__count">04</span>
-                    <div class="feature2__content">
-                        <span class="lnr lnr-chart-bars mcolor2"></span>
-                        <h3 class="feature2-title">Well Organized Code</h3>
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                    <!-- end /.feature2__content -->
-                </div>
-                <!-- end /.feature2 -->
-            </div>
-            <!-- end /.col-md-4 -->
-
-            <!-- start .col-md-4 -->
-            <div class="col-lg-4 col-md-6">
-                <!-- start .feature2 -->
-                <div class="feature2">
-                    <span class="feature2__count">05</span>
-                    <div class="feature2__content">
-                        <span class="lnr lnr-leaf mcolor3"></span>
-                        <h3 class="feature2-title">Life Time Free Update</h3>
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                    <!-- end /.feature2__content -->
-                </div>
-                <!-- end /.feature2 -->
-            </div>
-            <!-- end /.col-md-4 -->
-
-            <!-- start .col-md-4 -->
-            <div class="col-lg-4 col-md-6">
-                <!-- start .feature2 -->
-                <div class="feature2">
-                    <span class="feature2__count">06</span>
-                    <div class="feature2__content">
-                        <span class="lnr lnr-phone mcolor4"></span>
-                        <h3 class="feature2-title">Fast and Friendly Support</h3>
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                    <!-- end /.feature2__content -->
-                </div>
-                <!-- end /.feature2 -->
-            </div>
-            <!-- end /.col-md-4 -->
+           {% endfor %}
         </div>
-        <!-- end /.row -->
     </div>
-    <!-- end /.container -->
 </section>

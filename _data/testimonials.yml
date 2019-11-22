@@ -1,0 +1,52 @@
+- section_info:
+    section_title: 'Our Clients<span class="highlighted">Feedback</span>'
+    section_description: >- #
+      Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+
+
+- feedback:
+    author_image: "/assets/images/test1.jpg"
+    author_name: "Lid est laborum"
+    author_designation: "leo quam aliquet"
+    text: >- #
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+
+
+- feedback:
+    author_image: "/assets/images/test2.jpg"
+    author_name: "Tubeda Pagla"
+    author_designation: "Product Designer"
+    text: >- #
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+
+
+- feedback:
+    author_image: "/assets/images/team1.jpg"
+    author_name: "Mattis Pagla"
+    author_designation: "justo ut scelerisque"
+    text: >- #
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+
+
+- feedback:
+    author_image: "/assets/images/team2.jpg"
+    author_name: "Interdum Mollis"
+    author_designation: "interdum is mollis"
+    text: >- #
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+
+
+- feedback:
+    author_image: "/assets/images/team3.jpg"
+    author_name: "Aliquet Diam"
+    author_designation: "scelerisque the mattis"
+    text: >- #
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+
+
+- feedback:
+    author_image: "/assets/images/team4.jpg"
+    author_name: "Scelerisque"
+    author_designation: "quam aliquet diam"
+    text: >- #
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.

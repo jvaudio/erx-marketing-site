@@ -1,0 +1,40 @@
+- page_info:
+    section_title: 'Why Choose<span class="highlighted">MartPlace</span>'
+    section_description: >- # section description
+      Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats 
+
+- choose:
+    title: "One Time Payment"
+    icon: '<span class="lnr lnr-license pcolor"></span>'
+    description: >- # description
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is elit metus.
+
+- choose:
+    title: "Quality Products"
+    icon: '<span class="lnr lnr-magic-wand scolor"></span>'
+    description: >- # description
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is elit metus.
+
+- choose:
+    title: "100% Secure Paymentt"
+    icon: '<span class="lnr lnr-lock mcolor1"></span>'
+    description: >- # description
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is elit metus.
+
+- choose:
+    title: "Well Organized Code"
+    icon: '<span class="lnr lnr-chart-bars mcolor2"></span>'
+    description: >- # description
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is elit metus.
+
+- choose:
+    title: "Life Time Free Update"
+    icon: '<span class="lnr lnr-leaf mcolor3"></span>'
+    description: >- # description
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is elit metus.
+
+- choose:
+    title: "Fast and Friendly Support"
+    icon: '<span class="lnr lnr-phone mcolor4"></span>'
+    description: >- # description
+      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is elit metus.

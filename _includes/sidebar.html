@@ -18,7 +18,7 @@
                      {% for post in site.posts | limit: "4" %}
                         <li>
                             <div class="thumbnail_img">
-                                <img src="{{post.post_image}}" alt="{{post.title}}">
+                                <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}"/></a>
                             </div>
                             <div class="title_area">
                                 <a href="{{post.url}}">
@@ -40,11 +40,11 @@
                         <li>
                             {% if post.post_image %}
                             <div class="thumbnail_img">
-                                <img src="{{post.post_image}}" alt="{{post.title}}"/>
+                                <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}"/></a>
                             </div>
                             {% endif %}
                             <div class="title_area">
-                                <a href="#">
+                                <a href="{{post.url}}">
                                     <h4>{{post.title | truncatewords: "7" }}</h4>
                                 </a>
                                 <div class="date_time">
@@ -96,14 +96,5 @@
             {{ tags | split:'</li>' | sort | join:'</li>' }}
         </ul>
     </div>
-<a href="#">
-<div class="banner">
-    <img src="{{relative_url}}/assets/images/banner.jpg" alt="Banner"/>
-    <div class="banner_content">
-        <h1>Banner</h1>
-        <p>360x270</p>
-    </div>
-</div>   
-</a>
-
+    {% include advertise.html %}
 </aside>
